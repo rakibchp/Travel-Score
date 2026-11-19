@@ -1,0 +1,10 @@
+[
+  { "name": "Barishal", "nameBn": "বরিশাল", "order": 1 },
+  { "name": "Chattogram", "nameBn": "চট্টগ্রাম", "order": 2 },
+  { "name": "Dhaka", "nameBn": "ঢাকা", "order": 3 },
+  { "name": "Khulna", "nameBn": "খুলনা", "order": 4 },
+  { "name": "Mymensingh", "nameBn": "ময়মনসিংহ", "order": 5 },
+  { "name": "Rajshahi", "nameBn": "রাজশাহী", "order": 6 },
+  { "name": "Rangpur", "nameBn": "রংপুর", "order": 7 },
+  { "name": "Sylhet", "nameBn": "সিলেট", "order": 8 }
+]

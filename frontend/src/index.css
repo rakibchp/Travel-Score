@@ -1,0 +1,95 @@
+@import 'tailwindcss';
+
+/*
+ * Design tokens. Names follow shadcn/ui conventions (primary, muted, card…)
+ * so shadcn components drop in without changes.
+ *
+ * Brand: Bangladesh flag green (#006a4e) as primary; flag red used sparingly.
+ * Contrast: primary on white ≈ 6.9:1. For red *text* use --color-accent-strong
+ * (#c8102e ≈ 5.9:1); the brighter flag red is for decoration only.
+ */
+@theme {
+  --font-sans: 'Plus Jakarta Sans', 'Hind Siliguri', ui-sans-serif, system-ui, sans-serif;
+  --font-bengali: 'Hind Siliguri', 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
+
+  --color-brand-50: #ecfdf5;
+  --color-brand-100: #d1fae5;
+  --color-brand-200: #a7f3d0;
+  --color-brand-300: #6ee7b7;
+  --color-brand-400: #2fbf8f;
+  --color-brand-500: #0f9b6e;
+  --color-brand-600: #007f5c;
+  --color-brand-700: #006a4e;
+  --color-brand-800: #05543f;
+  --color-brand-900: #063f30;
+  --color-brand-950: #03241b;
+
+  --color-flag-red: #f42a41;
+
+  --color-background: #ffffff;
+  --color-foreground: #0f1f1a;
+  --color-card: #ffffff;
+  --color-card-foreground: #0f1f1a;
+  --color-primary: #006a4e;
+  --color-primary-foreground: #ffffff;
+  --color-secondary: #f1f7f4;
+  --color-secondary-foreground: #0f3b2e;
+  --color-muted: #f4f7f6;
+  --color-muted-foreground: #55665f;
+  --color-accent: #f42a41;
+  --color-accent-strong: #c8102e;
+  --color-accent-foreground: #ffffff;
+  --color-destructive: #c8102e;
+  --color-border: #e3ebe7;
+  --color-input: #d7e2dd;
+  --color-ring: #0f9b6e;
+
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.25rem;
+  --radius-2xl: 1.5rem;
+
+  --animate-fade-up: fade-up 0.5s ease-out both;
+
+  @keyframes fade-up {
+    from {
+      opacity: 0;
+      transform: translateY(8px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    -webkit-tap-highlight-color: transparent;
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+  :lang(bn),
+  .font-bengali {
+    font-family: var(--font-bengali);
+  }
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-ring;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

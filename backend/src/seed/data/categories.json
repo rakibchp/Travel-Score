@@ -1,0 +1,15 @@
+[
+  { "name": "Natural Attractions", "nameBn": "প্রাকৃতিক দর্শনীয় স্থান", "icon": "Leaf", "order": 1 },
+  { "name": "Beaches", "nameBn": "সমুদ্র সৈকত", "icon": "Waves", "order": 2 },
+  { "name": "Mountains and Hills", "nameBn": "পাহাড় ও টিলা", "icon": "Mountain", "order": 3 },
+  { "name": "Waterfalls", "nameBn": "ঝর্ণা ও জলপ্রপাত", "icon": "Droplets", "order": 4 },
+  { "name": "Rivers and Lakes", "nameBn": "নদী ও হ্রদ", "icon": "Sailboat", "order": 5 },
+  { "name": "Historical Places", "nameBn": "ঐতিহাসিক স্থান", "icon": "Landmark", "order": 6 },
+  { "name": "Archaeological Sites", "nameBn": "প্রত্নতাত্ত্বিক স্থান", "icon": "Shovel", "order": 7 },
+  { "name": "Religious and Cultural Places", "nameBn": "ধর্মীয় ও সাংস্কৃতিক স্থান", "icon": "Sparkles", "order": 8 },
+  { "name": "Wildlife and Forests", "nameBn": "বন ও বন্যপ্রাণী", "icon": "TreePine", "order": 9 },
+  { "name": "Islands", "nameBn": "দ্বীপ", "icon": "TreePalm", "order": 10 },
+  { "name": "Museums", "nameBn": "জাদুঘর", "icon": "Library", "order": 11 },
+  { "name": "Parks and Gardens", "nameBn": "পার্ক ও উদ্যান", "icon": "Flower2", "order": 12 },
+  { "name": "Famous Tourist Spots", "nameBn": "জনপ্রিয় পর্যটন কেন্দ্র", "icon": "Star", "order": 13 }
+]
